@@ -69,7 +69,7 @@ export default function LoadingPage() {
         </div>
 
         {/* Brand Name */}
-        <h1 className="text-4xl font-bold text-black mb-2 animate-fade-in">Dating</h1>
+        <h1 className="text-4xl font-bold text-black mb-2 animate-fade-in">TiviAi</h1>
         <p className="text-gray-600 mb-8 animate-fade-in-delayed">Cuidando de quem cuida</p>
 
         {/* Inspirational Message */}

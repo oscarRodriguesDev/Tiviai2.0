@@ -69,7 +69,7 @@ function AuthGuard({ children }: { children: React.ReactNode }) {
   const { status } = useSession();
   const router = useRouter();
   const pathname = usePathname();
-  const publicRoutes = ["/", "/login", "/recuperar-senha", "/pre-cadastro","/publiccall"];
+  const publicRoutes = ["/", "/login", "/recupera", "/pre-cadastro","/publiccall","/amnp"];
   const dynamicPublicPrefixes = ["/publiccall/"];
 
 
@@ -101,14 +101,14 @@ function AuthGuard({ children }: { children: React.ReactNode }) {
     }
 
     if (status === "authenticated" && isPublicPage) {
-      router.push("/feed");
+      router.push("/common-page");
       return;
     }
   }, [status, router, pathname]);
 
 
   if (status === "loading") {
-    return <>loading....</>
+    return <p>Carregando...</p>;
   }
 
   return <>{children}</>;

@@ -13,48 +13,47 @@ import { ThemeToggle } from "@/components/theme-toggle"
 import { signIn } from "next-auth/react"
 import { useSession } from "next-auth/react"
 import { useEffect } from "react"
-import { redirect } from "next/navigation"
+import { redirect, useRouter } from "next/navigation"
 import { showErrorMessage, showSuccessMessage } from "../../util/messages"
 
 export default function LoginPage() {
-
+  const router = useRouter()
   const [showPassword, setShowPassword] = useState(false)
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [isLoading, setIsLoading] = useState(false)
   const session = useSession()
 
-const handleLogin = async (event: React.FormEvent<HTMLFormElement>) => {
-  event.preventDefault();
-  setIsLoading(true);
-  try {
-    const result = await signIn("credentials", {
-      email,
-      password,
-      redirect: false, // evita redirecionamento automático
-    });
+  const handleLogin = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setIsLoading(true);
+    try {
+      const result = await signIn("credentials", {
+        email,
+        password,
+        redirect: false, // evita redirecionamento automático
+      });
 
-    if (result?.error) {
-      showErrorMessage("Email ou senha inválidos. Tente novamente.");
+      if (result?.error) {
+        showErrorMessage("Email ou senha inválidos. Tente novamente.");
+        setPassword("");
+        setEmail("");
+      } else {
+
+        showSuccessMessage(`Seja bem-vindo(a)!`);
+        router.push("/feed"); // redirecionamento manual
+      }
+
+    } catch (error) {
+      console.error("Erro na página de login: ", error);
       setPassword("");
-      setEmail("");
-    } else if (result?.ok) {
-      showSuccessMessage(`Seja bem-vindo(a)!`);
-      setEmail("");
-      setPassword("");
+    } finally {
       setIsLoading(false);
-      redirect("/feed"); // redirecionamento manual
     }
-  } catch (error) {
-    console.error("Erro na página de login: ", error);
-    setPassword("");
-  } finally {
-    setIsLoading(false);
-  }
-};
+  };
 
 
-    useEffect(() => {
+  useEffect(() => {
     if (session.status === 'unauthenticated') {
       return
     } else {
@@ -94,12 +93,12 @@ const handleLogin = async (event: React.FormEvent<HTMLFormElement>) => {
               <span className="text-emerald-200">Transformando Vidas</span>
             </h2>
             <p className="text-xl text-emerald-100 leading-relaxed">
-             A plataforma inteligente que transforma suas consultas em resultados.
+              A plataforma inteligente que transforma suas consultas em resultados.
             </p>
           </div>
 
           {/* Stats */}
-        {/*   <div className="grid grid-cols-2 gap-6 mb-12">
+          {/*   <div className="grid grid-cols-2 gap-6 mb-12">
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
               <div className="flex items-center gap-3 mb-2">
                 <Users className="w-6 h-6 text-emerald-200" />

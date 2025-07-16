@@ -14,7 +14,7 @@ export default function RecuperarSenhaLoading() {
                 <Brain className="w-8 h-8 text-white" />
               </div>
               <div>
-                <h1 className="text-2xl font-bold text-black">Dating</h1>
+                <h1 className="text-2xl font-bold text-black">TiviAi</h1>
                 <p className="text-sm text-gray-600">Recuperação de Senha</p>
               </div>
             </div>

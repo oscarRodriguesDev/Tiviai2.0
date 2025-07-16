@@ -24,7 +24,7 @@ export default function TermosUsoPage() {
               </div>
             </div>
             <h1 className="text-4xl font-bold tracking-tight mb-2">Termos de Uso e Privacidade</h1>
-            <p className="text-muted-foreground text-lg">Condições gerais de uso da plataforma Dating</p>
+            <p className="text-muted-foreground text-lg">Condições gerais de uso da plataforma TiviAi</p>
             <p className="text-sm text-muted-foreground mt-2">Última atualização: 15 de janeiro de 2024</p>
           </div>
         </div>
@@ -40,12 +40,12 @@ export default function TermosUsoPage() {
             </CardHeader>
             <CardContent className="space-y-4">
               <p>
-                Ao acessar e utilizar a plataforma <strong>Dating - Plataforma Psicológica</strong>, você concorda em
+                Ao acessar e utilizar a plataforma <strong>TiviAi - Plataforma Psicológica</strong>, você concorda em
                 cumprir e estar vinculado a estes Termos de Uso. Se você não concordar com qualquer parte destes termos,
                 não deve utilizar nossos serviços.
               </p>
               <p>
-                Estes termos constituem um acordo legal entre você e a Dating, estabelecendo os direitos e obrigações de
+                Estes termos constituem um acordo legal entre você e a TiviAi, estabelecendo os direitos e obrigações de
                 ambas as partes.
               </p>
             </CardContent>
@@ -61,7 +61,7 @@ export default function TermosUsoPage() {
                 <div>
                   <h4 className="font-semibold">Plataforma:</h4>
                   <p className="text-muted-foreground">
-                    O sistema online Dating que conecta psicólogos e pacientes para consultas psicológicas.
+                    O sistema online TiviAi que conecta psicólogos e pacientes para consultas psicológicas.
                   </p>
                 </div>
 
@@ -307,7 +307,7 @@ export default function TermosUsoPage() {
             <CardContent className="space-y-4">
               <p>
                 Todo o conteúdo da plataforma, incluindo textos, gráficos, logos, ícones, imagens, clipes de áudio,
-                downloads digitais e software, é propriedade da Dating ou de seus fornecedores de conteúdo e está
+                downloads digitais e software, é propriedade da TiviAi ou de seus fornecedores de conteúdo e está
                 protegido por leis de direitos autorais.
               </p>
 
@@ -362,7 +362,7 @@ export default function TermosUsoPage() {
               </div>
 
               <div>
-                <h4 className="font-semibold mb-2">11.2 Rescisão pela Dating</h4>
+                <h4 className="font-semibold mb-2">11.2 Rescisão pela TiviAi</h4>
                 <p className="text-muted-foreground">
                   Podemos suspender ou encerrar sua conta em caso de violação destes termos, atividade fraudulenta ou
                   por outros motivos justificados.
@@ -447,7 +447,7 @@ export default function TermosUsoPage() {
         <div className="mt-8 text-center">
           <Separator className="mb-6" />
           <p className="text-sm text-muted-foreground">
-            © 2024 Dating - Plataforma Psicológica. Todos os direitos reservados.
+            © 2024 TiviAi - Plataforma Psicológica. Todos os direitos reservados.
           </p>
         </div>
       </div>

@@ -46,7 +46,7 @@ export default function PoliticaCookiesPage() {
                 forma mais eficiente, bem como para fornecer informações aos proprietários do site.
               </p>
               <p>
-                Na <strong>Dating - Plataforma Psicológica</strong>, utilizamos cookies para melhorar sua experiência,
+                Na <strong>TiviAi - Plataforma Psicológica</strong>, utilizamos cookies para melhorar sua experiência,
                 personalizar conteúdo e analisar como nosso site é usado.
               </p>
             </CardContent>
@@ -432,7 +432,7 @@ export default function PoliticaCookiesPage() {
         <div className="mt-8 text-center">
           <Separator className="mb-6" />
           <p className="text-sm text-muted-foreground">
-            © 2024 Dating - Plataforma Psicológica. Todos os direitos reservados.
+            © 2024 TiviAi - Plataforma Psicológica. Todos os direitos reservados.
           </p>
         </div>
       </div>

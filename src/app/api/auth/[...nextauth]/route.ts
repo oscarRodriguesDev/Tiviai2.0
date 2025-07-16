@@ -24,12 +24,7 @@ import { PrismaAdapter } from "@next-auth/prisma-adapter";
 import { PrismaClient, UserRole } from "@prisma/client";
 import { compare } from "bcryptjs";
 
-
-
-
 const prisma = new PrismaClient();
-
-
 /**
  * Configuração principal do NextAuth para autenticação na aplicação.
  * 

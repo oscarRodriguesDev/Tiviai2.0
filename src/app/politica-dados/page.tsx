@@ -40,7 +40,7 @@ export default function PoliticaDadosPage() {
             </CardHeader>
             <CardContent className="space-y-4">
               <p>
-                A <strong>Dating - Plataforma Psicológica</strong> está comprometida com a proteção da privacidade e dos
+                A <strong>TiviAi - Plataforma Psicológica</strong> está comprometida com a proteção da privacidade e dos
                 dados pessoais de nossos usuários. Esta Política de Proteção de Dados descreve como coletamos, usamos,
                 armazenamos e protegemos suas informações pessoais em conformidade com a Lei Geral de Proteção de Dados
                 (LGPD - Lei nº 13.709/2018).
@@ -386,7 +386,7 @@ export default function PoliticaDadosPage() {
         <div className="mt-8 text-center">
           <Separator className="mb-6" />
           <p className="text-sm text-muted-foreground">
-            © 2024 Dating - Plataforma Psicológica. Todos os direitos reservados.
+            © 2024 TiviAi - Plataforma Psicológica. Todos os direitos reservados.
           </p>
         </div>
       </div>

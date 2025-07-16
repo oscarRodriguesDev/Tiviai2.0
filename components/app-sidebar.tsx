@@ -192,7 +192,7 @@ export function AppSidebar() {
                 <Brain className="h-6 w-6 text-white" />
               </div>
               <div className="flex flex-col">
-                <span className="text-lg font-bold text-black dark:text-white">Dating</span>
+                <span className="text-lg font-bold text-black dark:text-white">TiviAi</span>
                 <span className="text-xs text-gray-500 dark:text-gray-400">Plataforma Psicológica</span>
               </div>
             </div>
