@@ -64,7 +64,6 @@ async function notificar(email: string, nome: string, email_system: string, senh
 
 export async function PUT(req: Request) {
     const { email } = await req.json(); // Supondo que o corpo da requisição tenha o email fornecido pelo usuário
-  
     if (!email) {
       return NextResponse.json({ message: "E-mail não fornecido." }, { status: 400 });
     }

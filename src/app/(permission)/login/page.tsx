@@ -15,6 +15,8 @@ import { useSession } from "next-auth/react"
 import { useEffect } from "react"
 import { redirect, useRouter } from "next/navigation"
 import { showErrorMessage, showSuccessMessage } from "../../util/messages"
+import Image from "next/image"
+import logo from "../../../../public/marca/logo.png"
 
 export default function LoginPage() {
   const router = useRouter()
@@ -83,7 +85,10 @@ export default function LoginPage() {
           <div className="mb-12">
             <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center backdrop-blur-sm">
-                <Heart className="w-6 h-6 text-white animate-heartbeat" />
+                <Image
+                src={logo}
+                 className="w-6 h-6 text-white animate-heartbeat"
+                 alt='logomarca' />
               </div>
               <h1 className="text-3xl font-bold">TiviAi</h1>
             </div>
@@ -97,25 +102,7 @@ export default function LoginPage() {
             </p>
           </div>
 
-          {/* Stats */}
-          {/*   <div className="grid grid-cols-2 gap-6 mb-12">
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-              <div className="flex items-center gap-3 mb-2">
-                <Users className="w-6 h-6 text-emerald-200" />
-                <span className="text-2xl font-bold">2.5K+</span>
-              </div>
-              <p className="text-emerald-100">Psicólogos Ativos</p>
-            </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-              <div className="flex items-center gap-3 mb-2">
-                <Heart className="w-6 h-6 text-emerald-200" />
-                <span className="text-2xl font-bold">15K+</span>
-              </div>
-              <p className="text-emerald-100">Vidas Transformadas</p>
-            </div>
-          </div>
- */}
-          {/* Features */}
+
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <CheckCircle className="w-5 h-5 text-emerald-200" />
@@ -143,9 +130,13 @@ export default function LoginPage() {
           {/* Mobile Logo */}
           <div className="lg:hidden flex items-center justify-center gap-3 mb-8">
             <div className="w-10 h-10 bg-primary/20 rounded-xl flex items-center justify-center">
-              <Heart className="w-5 h-5 text-primary animate-heartbeat" />
+              <Image
+              src={logo}
+               className="w-5 h-5 text-primary animate-heartbeat" 
+               alt=''
+               />
             </div>
-            <h1 className="text-2xl font-bold text-gray-900 dark:text-white">MindCare</h1>
+           
           </div>
 
           <Card className="bg-primary/5 dark:bg-primary/10 border-primary/20 shadow-xl backdrop-blur-sm">
