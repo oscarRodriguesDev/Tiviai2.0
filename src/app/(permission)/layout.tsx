@@ -32,8 +32,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
+    <>
+    
 < div suppressHydrationWarning>
-
     <AuthProvider>
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
         <ToastContainer/>
@@ -41,6 +42,7 @@ export default function RootLayout({
       </ThemeProvider>
     </AuthProvider>
 </div>
+    </>
 
   );
 }

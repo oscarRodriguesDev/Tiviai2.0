@@ -1,6 +1,6 @@
 import OpenAI from "openai";
 import { NextResponse } from "next/server";
-import { resumeBook } from "@/app/util/resumebook";
+import { resumeBook } from "@/src/app/util/resumebook";
 
 export const runtime = 'edge';
 

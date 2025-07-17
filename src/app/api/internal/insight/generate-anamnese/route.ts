@@ -1,6 +1,6 @@
 import OpenAI from "openai";
 import { NextResponse } from "next/server";
-import { generateAnamnese } from "@/app/util/Anamnese";
+import { generateAnamnese } from "@/src/app/util/Anamnese";
 
 
 export const runtime = 'edge';

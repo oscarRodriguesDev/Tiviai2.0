@@ -1,6 +1,6 @@
 import OpenAI from "openai";
 import { NextResponse } from "next/server";
-import { generate} from "@/app/util/GenericPrompts";
+import { generate } from "@/src/app/util/GenericPrompts";
 
 
 
